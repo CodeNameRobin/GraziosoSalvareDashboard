@@ -1,11 +1,63 @@
-How do you write programs that are maintainable, readable, and adaptable? Especially consider your work on the CRUD Python module from Project One, which you used to connect the dashboard widgets to the database in Project Two. What were the advantages of working in this way? How else could you use this CRUD Python module in the future?
+# Grazioso Salvare Dashboard
 
-I try to make my programs maintainable in that they are easy to understand while putting comments in where needed. I try to make it adaptibale in that the CRUD is easy to use regardless of who is using it as long as they have access. It was especially useful in that many aspects of the dashboard called on the read method in the CRUD so it is used in many diffrent ways from the list of animals to the pie chart provided. The CRUD could also be used to update or delete animals from the database given they where recreted as rescue animals or other aspects might want to be updated or changed.
+## Project Overview
 
-How do you approach a problem as a computer scientist? Consider how you approached the database or dashboard requirements that Grazioso Salvare requested. How did your approach to this project differ from previous assignments in other courses? What techniques or strategies would you use in the future to create databases to meet other client requests?
+This project involved developing an interactive dashboard application for Grazioso Salvare to assist with managing and filtering animal shelter data used for search and rescue training. The dashboard integrates database functionality, data visualization, and user interaction tools to improve the efficiency of locating and analyzing rescue animals.
 
-I tried to find the base requirments needed for the dashboard to work effectivly. This included having the list of animals be a digestable amount displayed, but also providing all the data to the graph. This also included having easy to sort by options for the desired rescue types, and an easy to use map displaying the selected animal. One thing that I felt needed work was the chart itself, when all animals are displayed it made it hard to understand and read with so many animal breeds listed, even sorted only by dogs it is hard to read. To combat this I made the option to show the top 5, 10, 15, or all the breeds displayed. This was definetly diffrent as creating an etire eteractive dashboard was difficult. I also could learn how to better improve the dashboard by using it in Jupyter Notebooks, also making it diffrent from other projects. In the future I think I would improve the dashboard or other projects by useing aggrigation, that would have been useful in grouping breeds for the pie chart specificly. 
+The application was designed to provide:
+- searchable animal records
+- rescue category filtering
+- interactive charts and visualizations
+- geographic mapping of selected animals
+- database-driven dashboard interaction
 
-What do computer scientists do, and why does it matter? How would your work on this type of project help a company, like Grazioso Salvare, to do their work better?
+## Technologies Used
+- Python
+- MongoDB
+- Dash
+- Plotly
+- Jupyter Notebook
+- CRUD Database Operations
 
-Computer scientests can create programs and other projects for people and companies. This matters because people need many diffrent things that we can create or help make. Work like this make it easier for people and companies to work and do what they need to do, for example this helped in the need to search for specific animals for search and rescue training. This would be difficult and time consuming to do without a database and a way to sort that database easily. 
+## Features
+- Interactive dashboard interface
+- Search and rescue category filtering
+- Dynamic animal record display
+- Breed distribution pie charts
+- Adjustable chart filtering options
+- Geographic location mapping
+- Reusable CRUD Python module for database interaction
+- 
+## Software Design & Maintainability
+
+A major focus of this project was creating maintainable and reusable software components. A standalone CRUD Python module was developed to handle database operations and connect dashboard widgets to the MongoDB database.
+
+This modular approach provided several advantages:
+- simplified database interaction
+- reusable code across dashboard components
+- easier debugging and maintenance
+- improved scalability for future features
+
+The CRUD module was used throughout the dashboard to retrieve and manage animal records for tables, charts, and filtering systems. This design could also be extended in the future to support updating, deleting, or expanding rescue animal records.
+
+## Problem Solving & Dashboard Design
+
+One challenge during development involved designing data visualizations that remained readable when displaying large amounts of breed data. When all records were displayed at once, the charts became difficult to interpret due to the number of categories being visualized.
+
+To improve usability, additional filtering options were implemented to allow users to display only the top 5, 10, 15, or all breeds within the dataset. This improved dashboard readability and overall user experience.
+
+The project also introduced the use of Jupyter Notebook for dashboard development and testing, which differed from previous software projects and provided additional insight into interactive application development.
+
+## What I Learned
+
+Through this project I gained practical experience with:
+- database-driven application development
+- CRUD architecture
+- dashboard and UI design
+- data visualization
+- client-focused software requirements
+- modular software design
+- usability improvements
+- interactive filtering systems
+
+This project reinforced the importance of designing software that is maintainable, adaptable, and user-focused while balancing technical functionality with usability.
